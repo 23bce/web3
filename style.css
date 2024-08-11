@@ -1,0 +1,259 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navbar-height: 70px;
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+    background-image: url("https://transparenttextures.com/patterns/gplay.png");
+    
+    /* background-color: #000000;
+background-image: url("https://transparenttextures.com/patterns/cubes.png"); */
+
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: calc(100vh + var(--navbar-height));
+    background: url(../img/big-mask.jpg) center/cover no-repeat;
+    z-index: 1;
+    margin-top: -130px;
+    width:100vw;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    right:0px;
+    top: 0px;
+    /* width: 100vw; */
+    padding: 10px;
+    z-index: 2;
+    /* overflow: hidden; */
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 113%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+#navbar > * {
+    position: relative;
+    z-index: 2;
+}
+
+#logo img {
+    height: 70px;
+    margin: 1px 1px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li {
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 10px 33px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgba(29, 28, 28, 1);
+    background-color: rgb(59, 205, 178);
+    transition:0.2s ease-in-out;
+}
+
+/* .services-container {
+    padding: 30px 100px;
+    margin-top: 20px;
+} */
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    background-color: #000000;
+    background-image: url("https://transparenttextures.com/patterns/gplay.png");
+    color:rgb(211, 209, 209);
+    border-radius: 20px;
+    
+    
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding:12px;
+    color:antiquewhite;
+}
+
+
+/* services Section*/
+
+#services{
+    margin:34px;
+    display:flex;
+    /* justify-content: space-around; */
+}
+#services .box{
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow:0 0 10px rgb(37, 243, 15);
+    padding:30px;
+    margin: 10px;
+    border-radius: 23px;
+    /* text-align: center; */
+    flex:1;
+    min-height:200px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: #000000;
+    background-image: url("https://transparenttextures.com/patterns/cubes.png");
+    
+
+}
+#services .box img{
+    height:150px;
+ 
+    margin:auto;
+    display:block;
+}
+
+
+
+.info-container {
+    margin: 100px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction:column;
+    gap: 120px;
+    /* left:500px; */
+    align-items: center;
+}
+
+.box2 {
+    border: 3px solid #ffffff;
+    /* flex: 1; */
+    width:165vh;
+    /* box-sizing: border-box; */
+    padding:12px;
+    margin-bottom:20px;
+    background-color: #000000;
+    background-image: url("https://transparenttextures.com/patterns/cubes.png");
+    
+    bottom:230px;
+    border-radius: 23px;
+    box-shadow:0 0 30px rgb(37, 243, 15);
+    transition: box-shadow 0.4s ease-in-out;
+    display:flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* display: block; */
+}
+.box2:hover{
+    background-color: #000000;
+    transform:scale(1.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.box2 img {
+    /* border:3px solid white; */
+    height: 150px;
+    margin-left: 20px;
+    margin-right: 40px;
+    display: block;
+    padding: 20px;
+    /* border:3px solid white; */
+}
+
+
+
+.title {
+    font-size: 2.8rem;
+    padding: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow:  1px 1px 0 #ff6700, 
+     1px -1px 0 #ff6700,
+    -1px -1px 0 #ff6700;
+}
+
+.content {
+    color: antiquewhite;
+    font-size: 2rem;
+    padding: 12px;
+    margin: 0;
+    list-style-type: disc;
+}
+
+.content li {
+    color: antiquewhite;
+    font-size: 1.3rem; 
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+.center{
+    text-align:center;
+    
+}
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(37, 243, 15,0.6);
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    
+    transform: scale(1.05);
+}
+
+.button:active {
+    
+    transform: scale(1);
+}
+
+
+
+
+
