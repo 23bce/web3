@@ -28,7 +28,7 @@ background-image: url("https://transparenttextures.com/patterns/cubes.png"); */
     align-items: center;
     position: relative;
     height: calc(100vh + var(--navbar-height));
-    background: url("./big-mask.jpg") center/cover no-repeat;
+    background: url("./big-mask.png") center/cover no-repeat;
     z-index: 1;
     margin-top: -130px;
     width:100vw;
